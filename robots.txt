@@ -1,0 +1,17 @@
+# robots.txt — myfridgedinner.com
+# Generated for GitHub + Netlify static deployment
+
+# Allow all well-behaved crawlers full access
+User-agent: *
+Allow: /
+
+# Block access to any build or config artifacts
+# (Netlify typically serves from root, but good practice)
+Disallow: /.netlify/
+Disallow: /node_modules/
+
+# Sitemap location — submitted to Google Search Console & Bing Webmaster Tools
+Sitemap: https://myfridgedinner.com/sitemap.xml
+
+# Crawl-delay hint for bots that respect it (does not apply to Googlebot)
+Crawl-delay: 10
