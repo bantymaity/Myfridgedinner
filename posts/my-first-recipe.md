@@ -4,7 +4,8 @@ title: "The Ultimate Garlic Butter Chicken"
 description: "Learn how to make the best garlic butter chicken using simple fridge staples. Perfect zero-waste dinner."
 keywords: "garlic butter chicken, zero waste recipe, easy dinner"
 image: "https://loremflickr.com/900/500/chicken,food?lock=1"
-date: 2026-08-21
+date: 2026-08-20
+tags: "post"
 ---
 
 আজকে আমি অফিস থেকে ফিরে ফ্রিজ খুলে দেখি শুধু মুরগি আর মাখন আছে... (নরমাল লিখলে এটা অটোমেটিক প্যারাগ্রাফ হবে)
