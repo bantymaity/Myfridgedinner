@@ -1,16 +1,15 @@
-const sitemap = require("@quasibit/eleventy-plugin-sitemap");
-
 module.exports = function(eleventyConfig) {
-  // আপনার ওয়েবসাইটের ডিজাইন এবং ছবি যেন ঠিক থাকে
+  // Pass through images, css and robots.txt
+  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("style.css");
-  eleventyConfig.addPassthroughCopy("images"); // যদি images ফোল্ডার থাকে
-
-  // গুগল সার্চ কনসোলের জন্য অটোমেটিক Sitemap তৈরি
-  eleventyConfig.addPlugin(sitemap, {
-    sitemap: {
-      hostname: "https://www.myfridgedinner.com",
-    },
-  });
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  
+  // Force Eleventy to copy your static pages exactly as they are!
+  eleventyConfig.addPassthroughCopy("index.html");
+  eleventyConfig.addPassthroughCopy("about.html");
+  eleventyConfig.addPassthroughCopy("contact.html");
+  eleventyConfig.addPassthroughCopy("terms.html");
+  eleventyConfig.addPassthroughCopy("privacy.html");
 
   return {
     dir: {
@@ -18,5 +17,5 @@ module.exports = function(eleventyConfig) {
       output: "_site",
       includes: "_includes"
     }
-  }
+  };
 };
